@@ -1,12 +1,8 @@
 ﻿using System;
 using System.IO;
-using Alexandria.Books;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Internal;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace Alexandria {
+namespace Alexandria.Host {
     public class Program     {
         public static void Main(string[] args)         {
             string contentRoot = Directory.GetCurrentDirectory();
@@ -25,18 +21,5 @@ namespace Alexandria {
 
             host.Run();
         }
-    }
-
-    class Startup     {
-    	public void ConfigureServices(IServiceCollection services) 	    {
-            services.AddMvc();
-    	    services.AddSingleton<BooksRepository, InMemoryBooksRepository>();
-    	}
-
-	    public void Configure(IApplicationBuilder app, IHostingEnvironment env) 	    {
-	    	app.UseStaticFiles();
-            app.UseDeveloperExceptionPage();
-	        app.UseMvc();
-	    }
     }
 }
