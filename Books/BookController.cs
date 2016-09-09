@@ -14,6 +14,7 @@ namespace Alexandria.Books {
         [Route("")]
         public IActionResult GetAll() {
             IList<Book> books = _repo.GetAll();
+
             return new OkObjectResult(books);
         }
     }
