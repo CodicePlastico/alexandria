@@ -67,26 +67,13 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
+	var _Alexandria = __webpack_require__(/*! ./Alexandria */ 173);
+	
+	var _Alexandria2 = _interopRequireDefault(_Alexandria);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Hello = _react2.default.createClass({
-	    displayName: 'Hello',
-	
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'span',
-	            null,
-	            'Hello, ',
-	            this.props.to || 'World',
-	            '!!!!'
-	        );
-	    }
-	});
-	
-	console.log('Rendering into', document.getElementById('alexandria-app-root'));
-	_reactDom2.default.render(_react2.default.createElement(Hello, { to: 'World' }), document.getElementById('alexandria-app-root'));
-	
-	console.log('Rendering done');
+	_reactDom2.default.render(_react2.default.createElement(_Alexandria2.default, null), document.getElementById('alexandria-app-root'));
 
 /***/ },
 /* 2 */
@@ -21971,6 +21958,62 @@
 	
 	module.exports = ReactDOMNullInputValuePropHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/process/browser.js */ 4)))
+
+/***/ },
+/* 173 */
+/*!*******************************!*\
+  !*** ./client/Alexandria.jsx ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Hello = __webpack_require__(/*! ./Hello */ 174);
+	
+	var _Hello2 = _interopRequireDefault(_Hello);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	module.exports = _react2.default.createClass({
+	    displayName: 'exports',
+	
+	    render: function render() {
+	        return _react2.default.createElement(_Hello2.default, { to: 'World' });
+	    }
+	});
+
+/***/ },
+/* 174 */
+/*!**************************!*\
+  !*** ./client/Hello.jsx ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	module.exports = _react2.default.createClass({
+	    displayName: 'exports',
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'span',
+	            null,
+	            'Hello, ',
+	            this.props.to || 'World',
+	            '!!!!'
+	        );
+	    }
+	});
 
 /***/ }
 /******/ ]);
