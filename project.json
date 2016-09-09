@@ -12,13 +12,16 @@
           "type": "platform",
           "version": "1.0.0"
         },
-        "Microsoft.AspNetCore.Server.Kestrel": { "version": "1.0.0"	},
-        "Microsoft.Extensions.DependencyInjection.Abstractions": { "version" : "1.0.0" },
-        "Microsoft.AspNetCore.Http.Abstractions": { "version" : "1.0.0" },
+        "Microsoft.AspNetCore.Server.Kestrel": { "version": "1.0.0" },
+        "Microsoft.Extensions.DependencyInjection.Abstractions": { "version": "1.0.0" },
+        "Microsoft.AspNetCore.Http.Abstractions": { "version": "1.0.0" },
         "Microsoft.AspNetCore.StaticFiles": { "version": "1.0.0" },
         "Microsoft.AspNetCore.Mvc": { "version": "1.0.0" },
         "Microsoft.AspNetCore.Mvc.DataAnnotations": { "version": "1.0.0" },
-        "Microsoft.AspNetCore.Diagnostics": { "version": "1.0.0" }
+        "Microsoft.AspNetCore.Diagnostics": { "version": "1.0.0" },
+        "System.Data.Common":  { "version":   "4.1.0" }, 
+        "System.Data.SqlClient":  { "version":   "4.1.0" }, 
+        "Dapper": { "version": "1.50.2" }
       },
       "imports": "dnxcore50"
     }

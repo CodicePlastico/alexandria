@@ -8,7 +8,8 @@ namespace Alexandria.Host
     class Startup {
         public void ConfigureServices(IServiceCollection services) 	    {
             services.AddMvc();
-            services.AddSingleton<BooksRepository, InMemoryBooksRepository>();
+            //services.AddSingleton<BooksRepository, InMemoryBooksRepository>();
+            services.AddSingleton<BooksRepository, DatabaseBooksRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env) 	    {
